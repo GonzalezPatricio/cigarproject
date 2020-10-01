@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,7 +13,7 @@ a{
 
 header{
     background-color:#525050;
-    height: 8rem;
+    height: 7rem;
     margin: 5px;
     position: sticky;
     top: 0;
@@ -25,9 +25,21 @@ header section{
     justify-content: space-between;
 }
 
+header .open,
+header .clouse {
+    display: none;
+}
+
+nav{
+  font-size: small;
+}
+
 .pheader{
-    font-size: 35px;
+    font-size: 25px;
     color: aliceblue;
+    text-align: center;
+    padding: 10px 0 0 15px;
+    margin: 5px;
 }
 
 .fotologo{
@@ -59,7 +71,7 @@ header nav ul li a:hover{
 }
 
 .main1{
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -74,12 +86,10 @@ h3{
 }
 .hyc{
     color:black;
-    letter-spacing: 1px;
+    letter-spacing: 0,5px;
     line-height: 20px;
     font-size: 18px;
-    padding: 20px;
-
-    font: italic;
+    text-align: justify;
 }
 body{
 background-color: rgb(184, 178, 178)
@@ -103,7 +113,7 @@ body main section a{
 }
 
 .resena{
-    width: 40%;
+    width: 50%;
 
 }
 
@@ -156,7 +166,7 @@ input {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    height: 120px;
+    height: 70px;
     font-weight: 300;
     text-align: center;
     margin-top: 10px;
@@ -173,7 +183,7 @@ input {
   .ghost-round {
     cursor: pointer;
     background: none;
-    border: 1px solid rgba(255, 255, 255, 0.65);
+    border: 2px solid rgba(255, 255, 255, 0.65);
     border-radius: 25px;
     color: rgba(255, 255, 255, 0.65);
     -webkit-align-self: flex-end;
@@ -327,7 +337,7 @@ input {
 }
 
 .btnenv:hover {
-background: #7C5548;;
+background: #7C5548;
 transition: 1s;
 }
 
@@ -343,7 +353,7 @@ transition: 1s;
 }
 
 .pagof:hover{
-    background-color: red;
+    background-color: rgba(83, 23, 23, 0.8);
     transition: 3s;
 }
 
@@ -390,12 +400,6 @@ footer nav a{
 }
 
 
-
-.h2cubano {
-    width: 100%;
-    margin: 1rem 10px;
-}
-
 .cuba2 ul li{
     display: inline;
     box-sizing: border-box;
@@ -410,7 +414,9 @@ footer nav a{
 
 /*DOMINICANO*/
 
-
+.psdom p{
+  text-align: justify;
+}
 
 .fotodomi ul li{
     display: inline;
@@ -422,6 +428,10 @@ footer nav a{
 
 /*NICARAGUA*/
 
+.psnic p{
+  text-align: justify;
+}
+
 .fotonica ul li{
     display: inline;
 }
@@ -432,6 +442,15 @@ footer nav a{
 
 /*consejos*/
 
+.imgcons{
+  display: flex;
+}
+.listconsej{
+  margin-top: 7rem;
+  letter-spacing: 1px;
+
+}
+
 .fotosz{
     padding: 2rem;
 }
@@ -441,3 +460,178 @@ footer nav a{
     padding: 2rem;
 
 }
+/*MOBILE*/
+
+@media (min-wigth: 769px) and (max-width: 1199px){
+  /*
+  tablet
+  */
+}
+
+@media (max-width: 768px){
+  /*cellphone*/
+  
+  header nav{ 
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#525050;
+   }
+   header{
+     width: 100%;
+     margin: 1px;
+     margin-top: 1px;
+     height: 6rem;
+   }
+   header .open {
+     display: block;
+     position: absolute;
+     right: 20px;
+     top: 30px;
+   }
+  
+   header .clouse {
+    display: flex;
+    position: absolute;
+    top: 50px;
+} {
+    display: flex;
+    position: absolute;
+    top: 50px;
+}
+    
+   #navheader:target{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   header nav ul{
+     flex-direction: column;
+     margin-bottom: 100%;
+     margin-left: 0px;
+   }
+
+   header nav ul li{
+     margin: 25px;
+   }
+
+   header nav ul li a{
+     font-size: 1.5rem;
+   }
+   .fotologo{
+     margin: auto;
+     padding: 4px;
+     width: 130px;
+     height: 105px;
+   }
+   .pheader{
+     font-size: 14px;
+     padding: 10px 100px 0 0;
+     margin: 5px;
+   }
+   .header section{
+     width: 150%;
+     background-color: #525050;
+   }
+   .main1{
+     display: inline;
+   }
+  
+   .main1 h2, h3{
+     margin: 20px;
+   }
+
+   .main2{
+     width: 100%;
+     margin: 0%;
+     padding: 0%;
+   }
+  
+   .hyc{
+     width: 90%;
+     padding: 1rem;
+     font-size: 15px;
+     letter-spacing: 1px;
+   }
+   
+   .resena{
+     width: 100%;
+   }
+
+   .formulario{
+     margin: auto;
+     width: auto;
+   }
+   .videoindex{
+     padding: 2rem;
+     margin-top: 2px;
+     width: auto;
+     display: flex;
+   }
+   .pagof{
+     padding: 1px;
+   }
+   footer{
+     margin: 0px;
+     width: 100%;
+     padding: 1px;
+  
+   }
+.imgcigarros{
+  width: 350px;
+}
+.imgmapacuba{
+  width: 400px;
+}
+  .cuba2{
+    margin: 30px;
+  }
+  
+  .videoconsejo{
+  display: flex;
+    margin: 15px 10px;
+    padding: 15% 10px;
+  }
+  
+  .fotosz{
+    width: auto;
+    padding: 0%;
+  }
+  .imgzonanica{
+    width: 400px;
+  }
+
+  .psdom p{
+    width: 90%;
+    margin: auto;
+  }
+
+.zonadom{
+width: 400px;
+}
+  .imgcons{
+    display: block;
+    text-align: center;
+    margin: 10px;
+  }
+  .listconsej{
+    letter-spacing: 1px;
+    margin: 15px 50px;
+  }
+  .psonsej{
+    padding: 5rem;
+  }
+  .nicbody{
+    width: 100%;
+  }
+  .psnic{
+    margin: 20px;
+  }
+}
+
+
+
+
